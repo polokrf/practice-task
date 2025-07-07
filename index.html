@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input-file</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .panda{
+      margin: 10px;
+      padding: 20px;
+    }
+    .panda input, label,img,a{
+      margin-top: 10px ;
+    }
+    .panda a{
+      display: inline-block;
+    }
+    .input{
+      margin:10px;
+      padding: 20px;
+    }
+    .input label{
+      display: block;
+      margin-top: 10px;
+    }
+    .input input[type="submit"]{
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <hr>
+    <section class="panda">
+      <div>
+        <label for="search"> search your image</label>
+        <input type="search"  id="search" placeholder="kung fu panda">
+
+       <input type="submit" value="search">
+
+       <div>
+        <figure>
+          <img src="close-up-felt-animal.jpg" alt="" width="400px">
+          <figcaption>pnada picture</figcaption>
+          </figure>
+      </div>
+
+       <div>
+        <a href="https://www.freepik.com/photos/kung-fu-panda">for more click here</a>
+       </div>
+      </div>
+    </section>
+    <hr>
+    <section class="input">
+      <div>
+        <h4>feedback form:</h4>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+        </div>
+        <div>
+          <label for="date">Date</label>
+          <input type="date"  id="date">
+        </div>
+        <div>
+          <label for="commant">Comment</label>
+          <textarea  id="commant" cols="30" rows="12"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="submit">
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
