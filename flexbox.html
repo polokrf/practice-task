@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>card-with-flexbox</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    img{
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px blue;
+      object-fit: cover;
+     
+    }
+    .hero-area{
+      width: min(1100px,90%);
+      margin: 0 auto;
+    }
+    .hero-area h1{
+      text-align: center;
+      padding: 20px 0;
+      text-transform: capitalize;
+      font-size: 35px;
+    }
+    .main-card{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card-div{
+      flex-basis: 32%;
+      text-align: center;
+      background-color:aliceblue;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px red;
+      margin-top:100px ;
+
+    }
+    .card-heading{
+      text-align: left;
+    }
+    .card-div h3,h5{
+      text-transform: capitalize;
+    }
+    .card-heading p ,h3,h5{
+      margin-top: 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .btn{
+      margin-top: 20px ;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    #btn{
+      padding: 10px 20px;
+      width: 250px;
+      border: none;
+      border-radius: 10px;
+      background-color: red;
+      color: aliceblue;
+      text-transform: capitalize;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 1s;
+
+    }
+
+    #btn:hover{
+      background-color:blue;
+     box-shadow: 0px 0px 5px blue;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero-area">
+    <div>
+
+      <h1>meet our team</h1>
+    </div>
+    <div class="main-card">
+      <div class="card-div">
+        <img src="pexels-madeon08-102061.jpg" alt="Developer">
+          <div class="card-heading">
+            <h3>alex johnson</h3>
+            <h5>frontend Developer</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quod nemo, inventore est facere ullam odio numquam molestias repudiandae quos.</p>
+
+            <div class="btn">
+              <button id="btn">contact</button>
+            </div>
+          </div>
+
+        </div>
+      <div class="card-div">
+        <img src="pexels-madeon08-102061.jpg" alt="Developer">
+          <div class="card-heading">
+            <h3>alex johnson</h3>
+            <h5>frontend Developer</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quod nemo, inventore est facere ullam odio numquam molestias repudiandae quos.</p>
+
+            <div class="btn">
+              <button id="btn">contact</button>
+            </div>
+          </div>
+
+        </div>
+      <div class="card-div">
+        <img src="pexels-madeon08-102061.jpg" alt="Developer">
+          <div class="card-heading">
+            <h3>alex johnson</h3>
+            <h5>frontend Developer</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quod nemo, inventore est facere ullam odio numquam molestias repudiandae quos.</p>
+
+            <div class="btn">
+              <button id="btn">contact</button>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </section>
+</body>
+</html>
