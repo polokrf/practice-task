@@ -4,11 +4,128 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Table-tournament</title>
+  <style>
+    .main{
+      width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .main h1{
+      text-transform: uppercase;
+    }
+    table{
+      border-collapse: collapse;
+      text-transform: capitalize;
+      font-weight: bold;
+      text-align: center;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+    table th{
+      font-weight: bolder;
+      color: red;
+    }
+    .td{
+      text-transform: uppercase;
+    }
+    td,th{
+      border: 1px solid blue;
+      padding: 10px 20px;
+    }
+    .last th{
+      color:#009432;
+    }
+    .th1 th:hover{
+      background-color: crimson;
+      color: aliceblue;
+    }
+    .th2 th:hover{
+      background-color:#12CBC4 ;
+      color: aliceblue;
+    }
+    .last th:hover{
+      background-color: #009432;
+      color:whitesmoke;
+    }
+    .td1 td:hover{
+      background-color: azure;
+    }
+    .td2 td:hover{
+      background-color: azure;
+    }
+    .td3 td:hover{
+      background-color: azure;
+    }
+  </style>
 </head>
 <body>
-  <section>
+  <section class="main">
     <div>
       <h1>Table tennis tournment</h1>
+    </div>
+    <div>
+      <table>
+        <caption>tournament schedule and results </caption>
+        <thead class="th1">
+          <tr>
+            <th>round 1</th>
+            <th>player a</th>
+            <th>player b</th>
+          </tr>
+        </thead>
+        <tbody class="td1">
+          <tr>
+            <td>match 1</td>
+            <td>john</td>
+            <td>alice</td>
+          </tr>
+          <tr>
+            <td>match 2</td>
+            <td>mark</td>
+            <td>sarah</td>
+          </tr>
+        </tbody>
+        <thead class="th2">
+          <tr>
+            <th>round 2</th>
+            <th>player c</th>
+            <th>player d</th>
+          </tr>
+        </thead>
+        <tbody class="td2">
+          <tr>
+            <td>match 3</td>
+            <td class="td">tbd</td>
+            <td class="td">tbd</td>
+          </tr>
+          <tr>
+            <td>match 4</td>
+            <td class="td">tbd</td>
+            <td class="td">tbd</td>
+          </tr>
+        </tbody>
+        <thead class="last">
+          <tr>
+            <th>final</th>
+            <th>winner match 3</th>
+            <th>winner match 4</th>
+
+          </tr>
+        </thead>
+        <tbody class="td3">
+          <tr>
+            <td>champion</td>
+            <td class="td">tbd</td>
+            <td class="td">tbd</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>winner</td>
+            <td class="td" colspan="3">tbd 3</td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
   </section>
 </body>
